@@ -1,0 +1,46 @@
+.web-footer{
+    box-sizing: border-box;
+    background: fade-out($color-grastur, 0.15);
+    padding: 8px;
+    color:$color-silver;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    transition: background 0.2s;
+    
+    &:hover {
+        background: $color-grastur;
+    }
+
+    .web-title{
+            font-size: $font-size-large;
+            font-weight: bold;
+            text-transform: uppercase;
+    }
+
+    a{
+        text-decoration: none;
+        color: $color-silver;
+        padding-right: 15px;
+    }
+}
+
+.botonTop{
+    overflow: hidden;
+    position: fixed;
+    bottom:35px;
+    right:15px;
+    transition: all 0.4s;
+    
+}
+
+.botonTop:hover{
+    overflow: hidden;
+    position: fixed;
+    bottom:35px;
+    right:15px;
+    transform: scale(1.4);
+    transition: all 0.8s;
+}

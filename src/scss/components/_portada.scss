@@ -1,0 +1,28 @@
+.title-img {
+    //background-size: 100% 100%;
+    margin-top:45px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(img/chiaomi.png);
+    
+    transition: background-size 0.5s;
+
+    @include if-mobile {
+    background-size: 45% 100%;
+    min-height: 180px;
+    }
+
+    @include if-mobile-landscape {  
+    background-size: 35% 100%;
+    min-height: 200px;
+    }
+
+    @include if-tablet {
+        background-size: 22% 100%;
+    height: 220px;
+    }
+    @include if-desktop {
+        background-size: 27% 100%;
+    height: 250px;
+    }
+}

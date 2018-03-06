@@ -1,0 +1,145 @@
+.bloque {
+    display: flex;
+    flex-direction: column;
+    .important_word {
+        font-weight: bold;
+        font-style: italic;
+    }
+    .title-colors {
+        color: white;
+        border: 7px solid white;
+        margin: 20px;
+        display: flex;
+        margin: 20px -50px 15px -50px;
+        padding: 5px 15px;
+        font-weight: bold;
+        border-radius: 25px;
+        animation-name: example;
+        animation-duration: 0.13s;
+        animation-iteration-count: infinite;
+        @keyframes example {
+            0% {
+                background-color: fade-out(#fdddae,0.2);
+            }
+            25% {
+                background-color: fade-out(#38c0ff,0.2);
+            }
+            50% {
+                background-color: fade-out(#ffff00,0.2);
+            }
+            75% {
+                background-color: fade-out(#ff00dd,0.2);
+            }
+            100% {
+                background-color: fade-out(#ff0000,0.2);
+            }
+        }
+        justify-content: center;
+        font-size: $font-size-big;
+        h1 {
+            color: $color-amazing-39;
+            padding-top: 0px;
+        }
+    }
+    .colors-container {
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        @include if-desktop {
+            flex-direction: row;
+        }
+        .mobile-item {
+            box-shadow: 0 10px 5px grey;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 800px;
+            @include if-mobile-landscape {
+                flex-direction: row;
+                height: 550;
+            }
+            @include if-desktop {
+                flex-direction: column;
+                height: 900px;
+            }
+            &.uno {
+                background-color: transparentize($color-amazing-39, 0.5);
+                @include if-desktop {
+                    flex: 10;
+                    order: 2;
+                }
+                img {
+                    @include if-desktop {
+                        order: -1;
+                    }
+                }
+            }
+            &.dos {
+                background-color: transparentize($color-sidonia-orange, 0.7);
+                @include if-desktop {
+                    flex: 7;
+                    order: 1;
+                }
+                img {
+                    @include if-mobile-landscape {
+                        order: 0;
+                    }
+                }
+            }
+            &.tres {
+                background-color: transparentize($color-blue, 0.4);
+                @include if-desktop {
+                    flex: 7;
+                    order: 3;
+                }
+            }
+            .img-colors {
+                height: 300px;
+                min-width: 300px;
+                padding: 10px;
+                @include if-mobile {
+                    height: 100px;
+                    min-width: 100px;
+                }
+                @include if-mobile-landscape {
+                    height: 150px;
+                    min-width: 150px;
+                }
+                @include if-desktop {
+                    height: 200px;
+                    min-width: 200px;
+                }
+            }
+            .informacion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 90%;
+                @include if-mobile-landscape {
+                    width: 40%;
+                }
+                @include if-desktop {
+                    width: 80%;
+                }
+                .modelo {
+                    font-size: $font-size-h3;
+                    font-weight: bold;
+                    padding-bottom: 30px;
+                }
+                .disponibilidad {
+                    text-align: center;
+                    font-size: $font-size-h5;
+                    color: $color-amazing-39;
+                }
+                .texto {
+                    font-family: $body-font-family;
+                    font-size: $font-size-base;
+                    padding-bottom: 20px;
+                    line-height: 1.7em;
+                }
+            }
+        }
+    }
+}

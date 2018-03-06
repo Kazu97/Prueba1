@@ -1,0 +1,284 @@
+.mobile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .ui-status {
+        display: none;
+    }
+    &.empty {
+        .ui-status.empty {
+            display: block;
+        }
+    }
+    &.loading {
+        .ui-status.loading {
+            display: block;
+        }
+    }
+    &.error {
+        .ui-status.error {
+            display: block;
+        }
+    }
+    &.ideal {
+        .ui-status.ideal {
+            display: block;
+        }
+    }
+    &.empty,
+    &.error,
+    &.loading {
+        font-size: $font-size-large;
+        text-align: center;
+        padding: 50px;
+    }
+}
+
+.mobile {
+    display: flex;
+    flex-direction: row;
+    background: $color-silver;
+    max-height: 240px;
+    overflow: hidden;
+    padding: 10px 10px;
+    margin: 25px 15px;
+    box-shadow: 0 10px 5px grey;
+
+    a:visited, a{
+        color:$color-grastur;
+        text-decoration: underline;
+    }
+    .imagen {
+        float: left;
+        height: 300px;
+        min-width: 300px;
+        padding: 10px;    
+
+        @include if-mobile {
+            height: 100px;
+            min-width: 100px;
+        }
+        @include if-mobile-landscape {
+            height: 150px;
+            min-width: 150px;
+        }
+        @include if-desktop {
+            height: 200px;
+            min-width: 200px;
+        }
+    }
+    .modelo {
+        margin-top: 30px;
+        font-weight: bold;
+        @include if-mobile {
+            font-weight: bold;
+            font-size: $font-size-h5;
+        }
+        @include if-mobile-landscape {
+            font-weight: bold;
+            font-size: $font-size-h2;
+        }
+        @include if-desktop {
+            font-weight: bold;
+            font-size: $font-size-h1;
+        }
+    }
+    .precio {
+
+        margin-top: 30px;
+        @include if-mobile {
+            font-weight: bold;
+            font-size: $font-size-h7;
+        }
+        @include if-mobile-landscape {
+            font-weight: bold;
+            font-size: $font-size-h5;
+        }
+        @include if-desktop {
+            font-weight: bold;
+            font-size: $font-size-h4;
+        }
+    }
+}
+
+.ifhone {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.motorhola {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.samsun {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.blackperry {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.noquia {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.alkatel {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.chiaomi {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.zapatofono {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.becu {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.samsun {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.iclassic {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.elege {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}
+
+.vasophone {
+    #hidden {
+        display: none;
+    }
+    &:hover {
+        #hidden {
+            display: block;
+        }
+        #visible {
+            display: none;
+        }
+    }
+}

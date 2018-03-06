@@ -1,0 +1,110 @@
+.web-header {
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    padding: 12px 27px;
+    box-sizing: border-box;
+    background: fade-out($color-grastur, 0.30);
+    color: $color-silver;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: padding 1s, background 1s;
+    &:hover {
+        background: fade-out($color-grastur, 0.15);
+        padding: 4px 20px 60px 20px;
+        #hidden {
+            display: block;
+            display: flex;
+            width: 100%;
+            padding-top: 20px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #visible {
+            display: none;
+        }
+    }
+    #hidden {
+        display: none;
+    }
+    .icons {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 3px 10px 3px 10px;
+    }
+    .web-title {
+        display: flex;
+        font-size: $font-size-h1;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 10px;
+    }
+    
+a {
+    color: $color-silver;
+}
+
+a:visited {
+    color: $color-silver;
+}
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busquedas {
+    background-color: $color-silver;
+    display: inline;
+    padding-right: -25px;
+    width: 300px;
+}
+
+
+.signin {
+    padding-left: 45px;
+}
+
+.home {
+    margin-left: 90px;
+}
+
+@include if-mobile {
+    .busquedas {
+        background-color: $color-silver;
+        display: inline;
+        width: 100px;
+    }
+    .signin {
+        font-size: $font-size-small;
+        padding-left: 2px;
+    }
+    .home {
+        font-size: $font-size-small;
+        margin-left: 3px;
+    }
+}
+
+@include if-mobile-landscape {
+    .busquedas {
+        background-color: $color-silver;
+        display: inline;
+        width: 100px;
+    }
+    .signin {
+        padding-left: 2px;
+    }
+    .home {
+        margin-left: 3px;
+    }
+}
